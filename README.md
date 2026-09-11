@@ -28,9 +28,9 @@
         SUM(o.Subtotal_Invoice) AS total_omset
       FROM `DATASET.Order_detail` o
       JOIN `DATASET.Produk_detail` p 
-        ON o.ID_Item = p.ID_Item
+        ON o.ID_Item = p.ID
       JOIN `DATASET.Customer_detail` c 
-        ON o.ID_Customer = c.ID_Customer
+        ON o.ID_Customer = c.ID
       WHERE p.Kategori = 'Coklat'
         AND c.Jenis_Outlet = 'Online'
         AND EXTRACT(YEAR FROM o.Tanggal) = 2025;
@@ -40,3 +40,7 @@
   * **Kopi:** Nilai kategori kopi pada kolom `Kategori` di tabel `Produk_detail`.
   * **Cookies:** Nilai kategori cookies pada kolom `Kategori` di tabel `Produk_detail`.
   * **TOP/CASH:** Nilai kategori pembayaran (Top/Cash) pada kolom `Tipe_Pembayaran` di tabel `Customer_detail`.
+
+  ### 📸 Demo Pengujian AI Agent
+  <img width="1200" height="763" alt="Demo Sales Agent AI2" src="https://github.com/user-attachments/assets/2d4f5cba-5488-4932-b4e4-f4a5a416b256" />
+
