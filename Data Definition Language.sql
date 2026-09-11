@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `indokopi-makmur-sentosa-501004.DATASET.Order_detail` (
+CREATE OR REPLACE TABLE `your-project-id.DATASET.Order_detail` (
   Tanggal DATE,
   ID_Item STRING,
   ID_Customer STRING,
@@ -12,7 +12,7 @@ CREATE OR REPLACE TABLE `indokopi-makmur-sentosa-501004.DATASET.Order_detail` (
 );
 
 
-CREATE OR REPLACE TABLE `indokopi-makmur-sentosa-501004.DATASET.Customer_detail` (
+CREATE OR REPLACE TABLE `your-project-id.DATASET.Customer_detail` (
   ID STRING,
   Nama_Perusahaan STRING,
   Nama_Toko STRING,
@@ -22,14 +22,14 @@ CREATE OR REPLACE TABLE `indokopi-makmur-sentosa-501004.DATASET.Customer_detail`
 );
 
 
-CREATE OR REPLACE TABLE `indokopi-makmur-sentosa-501004.DATASET.Produk_detail` (
+CREATE OR REPLACE TABLE `your-project-id.DATASET.Produk_detail` (
   ID STRING,
   Kategori STRING,
   Nama_Barang STRING,
   Harga INT64, 
 );
 
-CREATE OR REPLACE TABLE `indokopi-makmur-sentosa-501004.DATASET.Target_detail` (
+CREATE OR REPLACE TABLE `your-project-id.DATASET.Target_detail` (
   Bulan STRING,
   Tahun NUMERIC,
   Target NUMERIC,
